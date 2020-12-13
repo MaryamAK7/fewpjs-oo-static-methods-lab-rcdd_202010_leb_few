@@ -9,7 +9,7 @@ class Formatter {
   static titleize(string){
     let str=string.splice(" ");
     for(let val of str)
-    if(val == "a" || val == "an" || val == "but" || val == "of" || val == "and" || val == "for" || val == "at" || val == "by" || val == "from"){
+    if(val == "the" ||val == "a" || val == "an" || val == "but" || val == "of" || val == "and" || val == "for" || val == "at" || val == "by" || val == "from"){
       val.toUpperCase();
     }
     return str;
