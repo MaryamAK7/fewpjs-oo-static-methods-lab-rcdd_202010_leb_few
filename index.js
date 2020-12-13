@@ -11,8 +11,8 @@ class Formatter {
     let newstr= []
       newstr.push(str[0].charAt(0).toUpperCase()+str[0].slice(1));
     for(let i=1; i<str.length;i++){
-    if(str[i] == "the" ||newstr[i] == "a" ||newstr[i]  == "an" || newstr[i]  == "but" || newstr[i]  == "of" ||newstr[i]  == "and" || newstr[i] == "for" || newstr[i]  == "at" || newstr[i]  == "by" || newstr[i]  == "from"){
-      newstr.push .toUpperCase();
+    if(str[i] !== "the" && str[i] !== "a" && str[i]  !== "an" || str[i]  !== "but" || str[i]  !== "of" ||str[i]  !== "and" || str[i] !== "for" || str[i]  !== "at" || str[i]  !== "by" || str[i]  !== "from"){
+      newstr.push(this.capitalize(str[i]));
     }
     }
     return newstr;
