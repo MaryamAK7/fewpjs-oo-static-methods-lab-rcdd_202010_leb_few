@@ -8,12 +8,13 @@ class Formatter {
   }
   static titleize(string){
     let str=string.splice(" ");
-    for(let val of str){
-      val = val.charAt(0).toUpperCase()+val.slice(1);
-    if(val == "the" ||val == "a" || val == "an" || val == "but" || val == "of" || val == "and" || val == "for" || val == "at" || val == "by" || val == "from"){
-      val.toUpperCase();
+    let newstr= []
+    for(let i=0; i<str.length;i++){
+      newstr.push(val.charAt(0).toUpperCase()+val.slice(1));
+    if(newstr[i] == "the" ||newstr[i] == "a" ||newstr[i]  == "an" || newstr[i]  == "but" || newstr[i]  == "of" ||newstr[i]  == "and" || newstr[i] == "for" || newstr[i]  == "at" || newstr[i]  == "by" || newstr[i]  == "from"){
+      newstr[i] .toUpperCase();
     }
     }
-    return str;
+    return newstr;
   }
 }
