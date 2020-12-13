@@ -4,11 +4,7 @@ class Formatter {
     return string.charAt(0).toUpperCase()+string.splice(1)
   }
   static sanitize(string){
-    let str=[];
-    for(let val of [...string])
-    if(val){
-      
-    }
+    return string.replace( /[^A-Za-z0-9 '-]/g, '' )
   }
   static titleize(string){
     let str=string.splice(" ");
