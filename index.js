@@ -10,7 +10,7 @@ class Formatter {
     let str=string.split(" ");
     let newstr= []
     for(let i=0; i<str.length;i++){
-      newstr.push(str[i].charAt(0).toUpperCase()+val.slice(1));
+      newstr.push(str[i].charAt(0).toUpperCase()+str[i].slice(1));
     if(newstr[i] == "the" ||newstr[i] == "a" ||newstr[i]  == "an" || newstr[i]  == "but" || newstr[i]  == "of" ||newstr[i]  == "and" || newstr[i] == "for" || newstr[i]  == "at" || newstr[i]  == "by" || newstr[i]  == "from"){
       newstr[i] .toUpperCase();
     }
