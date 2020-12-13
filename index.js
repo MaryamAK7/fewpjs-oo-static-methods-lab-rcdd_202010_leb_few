@@ -15,6 +15,6 @@ class Formatter {
       newstr.push(this.capitalize(str[i]));
     }
     }
-    return newstr;
+    return newstr.join();
   }
 }
