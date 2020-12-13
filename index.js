@@ -10,4 +10,11 @@ class Formatter {
       
     }
   }
+  static sanitize(string){
+    let str=[];
+    for(let val of [...string])
+    if(val){
+      
+    }
+  }
 }
