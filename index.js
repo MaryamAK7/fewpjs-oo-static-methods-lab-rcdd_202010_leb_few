@@ -7,7 +7,7 @@ class Formatter {
     return string.replace( /[^A-Za-z0-9 '-]/g, '' )
   }
   static titleize(string){
-    let str=string.splice(" ");
+    let str=string.split(" ");
     let newstr= []
     for(let i=0; i<str.length;i++){
       newstr.push(val.charAt(0).toUpperCase()+val.slice(1));
